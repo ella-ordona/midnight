@@ -1,14 +1,22 @@
 $(document).ready (function() {
     
-    var contTime = setInterval(calcTime, 1000)
+    let contTime = setInterval(calcTime, 1000)
     
     function calcTime() {
-        var d = new Date();
-        var philTime = "Asia/Manila";
-        var finalTime= moment(d).tz(philTime).format("HH:mm");
+        let d = new Date();
+        let philTime = "Asia/Manila";
+        let finalTimePH = moment(d).tz(philTime).format("HH:mm");        
         
-        document.getElementById("clock").innerHTML=finalTime + " PHT";
+        document.getElementById("clock").innerHTML=finalTimePH + " PHT";
     }
+    
+    $(".about").on("click", function( ) {
+        $(".overlay").toggleClass("opacity-toggle");
+        a.stopPropagation();
+
+    });
+    
+    
     
     
     

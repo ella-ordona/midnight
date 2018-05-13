@@ -4,7 +4,7 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-image: url(assets/clips-3.jpg);
+    background-image: url(assets/lagro.jpg);
     background-size: contain;
     font-family: 'Archivo Black', sans-serif;
     font-size: 2vh;
@@ -33,6 +33,11 @@ button {
     
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
 
 .gif-wrapper {
     position: relative;
@@ -57,7 +62,7 @@ button {
 .about {
     position: fixed;
     top: 5px;
-    left: 90px;
+    left: 40px;
 }
 
 
@@ -145,6 +150,24 @@ button {
     bottom: 0; 
 }
 
+.overlay {
+    display: none;
+    background-image: url(assets/lagro.jpg);
+    background-size: cover;
+    width: 40vw;
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.opacity-toggle {
+    display: block;
+}
+
+mark {
+    background-color: #FFBC80;
+}
+
 @media (min-width: 701px) {
     
     body {
@@ -178,6 +201,11 @@ button {
         width: 1000vw;
     }
     
+    .about {
+        left: 80px;
+    }
+    
+    
     #clock {
         left: 32%;
         top: 1vh;
@@ -194,6 +222,10 @@ button {
     
     #top-border, #bottom-border {
         height: 70px;  
+    }
+    
+    .overlay {
+        width: 79vw;
     }
     
     
@@ -246,6 +278,14 @@ button {
     
     #top-border, #bottom-border {
         height: 10vh;  
+    }
+    
+    .about {
+        padding-left: 25px;
+    }
+    
+    .overlay {
+        width: 85vw;
     }
     
 }
